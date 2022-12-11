@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sophia&#39;s brilliant blog site!!</title>
+        <link>https://swexplore.github.io/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1602540281@qq.com (Sophia)</managingEditor>
+            <webMaster>1602540281@qq.com (Sophia)</webMaster><lastBuildDate>Sat, 26 Nov 2022 23:04:56 &#43;0800</lastBuildDate>
+            <atom:link href="https://swexplore.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>First_post</title>
+    <link>https://swexplore.github.io/posts/first_post/</link>
+    <pubDate>Sat, 26 Nov 2022 23:04:56 &#43;0800</pubDate>
+    <author>Sophia</author>
+    <guid>https://swexplore.github.io/posts/first_post/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Hugo_basic_usage</title>
+    <link>https://swexplore.github.io/posts/hugo/</link>
+    <pubDate>Thu, 24 Nov 2022 11:46:36 &#43;0000</pubDate>
+    <author>Sophia</author>
+    <guid>https://swexplore.github.io/posts/hugo/</guid>
+    <description><![CDATA[Hugo 小白使用手册 Install hugo windows download the hugo package hugo_sites Decompress and compile the env check hugo version 创建个人blog windows 打开 powershell 定位到 ./hugo/Sites 创建blog hugo new site myblog cd myblog pwd 下载主题 hugo_themes git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c ls -l cd themes cd .. pwd 启动]]></description>
+</item>
+<item>
+    <title>VASP-like</title>
+    <link>https://swexplore.github.io/posts/vasp_md/</link>
+    <pubDate>Thu, 24 Nov 2022 11:44:18 &#43;0000</pubDate>
+    <author>Sophia</author>
+    <guid>https://swexplore.github.io/posts/vasp_md/</guid>
+    <description><![CDATA[Link with this topic markdown_list pymatgen p4vasp vasp_md vaspy Recurrent vasp_md_si At first, softwares prepared pymatgen py4vasp vaspy gnuplot pymatgen pip install pymatgen #failed Use code below: module avail module load conda Unload envs module unload conda conda create -n my_pymatgen python # 创建虚拟环境my_pymatgen source activate my_pymatgen # 激活虚拟环境]]></description>
+</item>
+<item>
+    <title>Blog</title>
+    <link>https://swexplore.github.io/posts/blog/</link>
+    <pubDate>Tue, 15 Nov 2022 15:33:37 &#43;0800</pubDate>
+    <author>Sophia</author>
+    <guid>https://swexplore.github.io/posts/blog/</guid>
+    <description><![CDATA[sophia gives a chance to blog something on this platform&hellip;. paper reading last week ]]></description>
+</item>
+</channel>
+</rss>

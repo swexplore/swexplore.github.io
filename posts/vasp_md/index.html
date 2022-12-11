@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>VASP-like - Sophia&#39;s brilliant blog site!!</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="VASP-like" />
+<meta property="og:description" content="Link with this topic markdown_list pymatgen p4vasp vasp_md vaspy Recurrent vasp_md_si At first, softwares prepared pymatgen py4vasp vaspy gnuplot pymatgen pip install pymatgen #failed Use code below: module avail module load conda Unload envs module unload conda conda create -n my_pymatgen python # 创建虚拟环境my_pymatgen source activate my_pymatgen # 激活虚拟环境" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swexplore.github.io/posts/vasp_md/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-24T11:44:18+00:00" />
+<meta property="article:modified_time" content="2022-11-24T11:44:18+00:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VASP-like"/>
+<meta name="twitter:description" content="Link with this topic markdown_list pymatgen p4vasp vasp_md vaspy Recurrent vasp_md_si At first, softwares prepared pymatgen py4vasp vaspy gnuplot pymatgen pip install pymatgen #failed Use code below: module avail module load conda Unload envs module unload conda conda create -n my_pymatgen python # 创建虚拟环境my_pymatgen source activate my_pymatgen # 激活虚拟环境"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://swexplore.github.io/posts/vasp_md/" /><link rel="prev" href="https://swexplore.github.io/posts/blog/" /><link rel="next" href="https://swexplore.github.io/posts/hugo/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "VASP-like",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/swexplore.github.io\/posts\/vasp_md\/"
+        },"genre": "posts","wordcount":  209 ,
+        "url": "https:\/\/swexplore.github.io\/posts\/vasp_md\/","datePublished": "2022-11-24T11:44:18+00:00","dateModified": "2022-11-24T11:44:18+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Sophia"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sophia&#39;s brilliant blog site!!"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sophia&#39;s brilliant blog site!!"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">VASP-like</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Sophia</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-24">2022-11-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;209 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#at-first-softwares-prepared">At first, softwares prepared</a></li>
+    <li><a href="#pymatgen">pymatgen</a>
+      <ul>
+        <li><a href="#use-code-below">Use code below:</a></li>
+        <li><a href="#unload-envs">Unload envs</a></li>
+        <li><a href="#exit-the-activated-env">Exit the activated env:</a></li>
+        <li><a href="#update-pymatgen">Update pymatgen</a></li>
+        <li><a href="#dependent-base">Dependent base</a></li>
+      </ul>
+    </li>
+    <li><a href="#p4vasp">p4vasp</a></li>
+    <li><a href="#vaspy">vaspy</a></li>
+    <li><a href="#gnuplot">gnuplot</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="link-with-this-topic">Link with this topic</h1>
+<ol>
+<li><a href="https://markdown.com.cn/cheat-sheet.html#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95" target="_blank" rel="noopener noreffer ">markdown_list</a></li>
+<li><a href="https://www.jianshu.com/p/48ef2577ca22" target="_blank" rel="noopener noreffer ">pymatgen</a></li>
+<li><a href="https://www.vasp.at/py4vasp/latest/" target="_blank" rel="noopener noreffer ">p4vasp</a></li>
+<li><a href="https://www.vasp.at/tutorials/latest/md/part1/" target="_blank" rel="noopener noreffer ">vasp_md</a></li>
+<li><a href="https://pytlab.github.io/2016/11/26/%E4%BD%BF%E7%94%A8VASPy%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86VASP%E6%96%87%E4%BB%B6%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" target="_blank" rel="noopener noreffer ">vaspy</a></li>
+</ol>
+<hr>
+<h1 id="recurrent-vasp_md_si">Recurrent vasp_md_si</h1>
+<h2 id="at-first-softwares-prepared">At first, softwares prepared</h2>
+<ol>
+<li>pymatgen</li>
+<li>py4vasp</li>
+<li>vaspy</li>
+<li>gnuplot</li>
+</ol>
+<h2 id="pymatgen">pymatgen</h2>
+<p><code>pip install pymatgen #failed</code></p>
+<h3 id="use-code-below">Use code below:</h3>
+<p><code>module avail</code>
+<code>module load conda</code></p>
+<h3 id="unload-envs">Unload envs</h3>
+<pre tabindex="0"><code>    module unload conda
+    conda create -n my_pymatgen python # 创建虚拟环境my_pymatgen
+    source activate my_pymatgen  # 激活虚拟环境
+    conda install --channel conda-forge pymatgen
+</code></pre><h3 id="exit-the-activated-env">Exit the activated env:</h3>
+<pre tabindex="0"><code>    conda deactivate my_pymatgen
+    conda install gcc   # 安装gcc编译器用来编译pymatgen,已有gcc环境的不要做
+</code></pre><h3 id="update-pymatgen">Update pymatgen</h3>
+<p><code>conda upgrade pymatgen </code></p>
+<h3 id="dependent-base">Dependent base</h3>
+<p><code>pmg config --install enumlib </code></p>
+<ul>
+<li>failed when git clone, new way:</li>
+</ul>
+<pre tabindex="0"><code>
+    git clone --recursive https://github.com/msg-byu/enumlib.git
+    conda install --channel matsci enumlib #compile
+</code></pre><ul>
+<li>
+<p>bader install</p>
+<p><code>pmg config --install bader</code></p>
+</li>
+</ul>
+<hr>
+<h2 id="p4vasp">p4vasp</h2>
+<pre tabindex="0"><code>
+    conda install -c conda-forge mdtraj
+    pip install py4vasp
+</code></pre><ul>
+<li>Quick start</li>
+</ul>
+<pre tabindex="0"><code>    from py4vasp import Calculation
+    calc = Calculation.from_path(&#34;.&#34;)
+</code></pre><ul>
+<li>py4vasp is only for vaspout.h5 file</li>
+</ul>
+<hr>
+<h2 id="vaspy">vaspy</h2>
+<p><code>pip install vaspy</code></p>
+<ul>
+<li>how to use it</li>
+</ul>
+<pre tabindex="0"><code>
+    from vaspy.incar import InCar
+    incar = InCar(&#34;INCAR&#34;)
+    incar.IBRION
+    incar.ISIF = 3
+</code></pre><hr>
+<h2 id="gnuplot">gnuplot</h2>
+<ul>
+<li>
+<p>First shfit to root avail</p>
+<p><code>su</code></p>
+</li>
+<li>
+<p>Enter with your password</p>
+<p><code>yum install gnuplot</code></p>
+<p><code>gnuplot</code></p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-11-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://swexplore.github.io/posts/vasp_md/" data-title="VASP-like"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://swexplore.github.io/posts/vasp_md/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://swexplore.github.io/posts/vasp_md/" data-title="VASP-like"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://swexplore.github.io/posts/vasp_md/" data-title="VASP-like"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://swexplore.github.io/posts/vasp_md/" data-title="VASP-like"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/blog/" class="prev" rel="prev" title="Blog"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Blog</a>
+            <a href="/posts/hugo/" class="next" rel="next" title="Hugo_basic_usage">Hugo_basic_usage<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.105.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Sophia</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Swexplore Blog","id-2":"Swexplore Blog"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
